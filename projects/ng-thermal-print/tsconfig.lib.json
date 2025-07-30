@@ -1,18 +1,22 @@
 {
-  "extends": "../../tsconfig.base.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "../../out-tsc/lib",
-    "target": "es2015",
+    "declarationMap": true,
     "module": "es2015",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "declaration": false,
     "sourceMap": true,
     "inlineSources": true,
-    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "types": ["w3c-web-usb"],
-    "lib": ["dom", "es2015"]
+    "types": [
+      "w3c-web-usb"
+    ],
+    "lib": [
+      "dom",
+      "es2015"
+    ]
   },
   "angularCompilerOptions": {
     "skipTemplateCodegen": true,

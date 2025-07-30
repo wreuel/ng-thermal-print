@@ -3,9 +3,10 @@ import { Component } from "@angular/core";
 import { PrintDriver } from "ng-thermal-print/lib/drivers/PrintDriver";
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.css"],
+    selector: "app-root",
+    templateUrl: "./app.component.html",
+    styleUrls: ["./app.component.css"],
+    standalone: false
 })
 export class AppComponent {
   status: boolean = false;
